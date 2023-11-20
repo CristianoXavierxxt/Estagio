@@ -20,47 +20,47 @@ Atividades da sprint:
 - [x] Git e GitHub do basico ao avançado
 - [x] Data & Analytics PB-AWS 1/10
 
-## Sprint 2 [README](linkdoreadmedasprint1)
+## Sprint 2 [README](linkdoreadmedasprint2)
 
 ...
 
 
-## Sprint 3 [README](linkdoreadmedasprint1)
+## Sprint 3 [README](linkdoreadmedasprint3)
 
 ...
 
 
-## Sprint 4 [README](linkdoreadmedasprint1)
+## Sprint 4 [README](linkdoreadmedasprint4)
 
 ...
 
 
-## Sprint 5 [README](linkdoreadmedasprint1)
+## Sprint 5 [README](linkdoreadmedasprint5)
 
 ...
 
 
-## Sprint 6 [README](linkdoreadmedasprint1)
+## Sprint 6 [README](linkdoreadmedasprint6)
 
 ...
 
 
-## Sprint 7 [README](linkdoreadmedasprint1)
+## Sprint 7 [README](linkdoreadmedasprint7)
 
 ...
 
 
-## Sprint 8 [README](linkdoreadmedasprint1)
+## Sprint 8 [README](linkdoreadmedasprint8)
 
 ...
 
 
-## Sprint 9 [README](linkdoreadmedasprint1)
+## Sprint 9 [README](linkdoreadmedasprint9)
 
 ...
 
 
-## Sprint 10 [README](linkdoreadmedasprint1)
+## Sprint 10 [README](linkdoreadmedasprint10)
 
 ...
 
