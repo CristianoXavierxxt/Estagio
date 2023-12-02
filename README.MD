@@ -22,7 +22,16 @@ Atividades da sprint:
 
 ## Sprint 2 [README](linkdoreadmedasprint2)
 
-...
+Atividades da sprint:
+
+- [x] Data & Analytics - PB - AWS 2/10
+    Sprint 2 do PB da Compass com ênfase em AWS - Conceitos I
+- [x] SQL para Análise de Dados: Do básico ao avançado
+- [x] Data & Analytics - PB - AWS 2/10
+Sprint 2 do PB da Compass com ênfase em AWS - Exercícios I e Conceitos II
+- [x] Big Data Fundamentos 3.0
+- [x] Data & Analytics - PB - AWS 2/10
+Sprint 2 do PB da Compass com ênfase em AWS - Exercícios II
 
 
 ## Sprint 3 [README](linkdoreadmedasprint3)
