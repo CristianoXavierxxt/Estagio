@@ -20,7 +20,7 @@ Atividades da sprint:
 - [x] Git e GitHub do basico ao avançado
 - [x] Data & Analytics PB-AWS 1/10
 
-## Sprint 2 [README](linkdoreadmedasprint2)
+## Sprint 2 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%202/README.MD)
 
 Atividades da sprint:
 

@@ -8,13 +8,13 @@ Aprendizagem da sprint:
 
 ## Exercicios
 
-- [Exercicio 1 CSV](linkparaoarquivoCSV)
+- [Exercicio 1 CSV](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%202/exercicios/Arquivo1.csv)
 
-- [Exercicio 2 CSV](linkparaoarquivoCSV)
+- [Exercicio 2 CSV](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%202/exercicios/Arquivo2.csv)
 
-- [Codigos-Exercico-Biblioteca](linkparaoarquivoCSV)
+- [Codigos-Exercico-Biblioteca](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%202/exercicios/ExerciciosBiblioteca.txt)
 
-- [Codigos-Exercico-Loja](linkparaoarquivoCSV)
+- [Codigos-Exercico-Loja](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%202/exercicios/ExerciciosLoja.txt)
 
 
 ## Certificado
