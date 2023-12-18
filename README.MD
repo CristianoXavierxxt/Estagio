@@ -34,7 +34,7 @@ Sprint 2 do PB da Compass com ênfase em AWS - Exercícios I e Conceitos II
 Sprint 2 do PB da Compass com ênfase em AWS - Exercícios II
 
 
-## Sprint 3 [README](linkdoreadmedasprint3)
+## Sprint 3 [README](https://github.com/CristianoXavierxxt/Estagio/tree/CristianoXavierxxt/SeLigaTech/Sprint%203#readme)
 
 Atividades da sprint:
 

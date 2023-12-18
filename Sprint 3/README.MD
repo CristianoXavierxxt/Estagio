@@ -8,19 +8,19 @@ Aprendizagem da sprint:
 
 ## Exercicios
 
-- [Resultado Exercicio 1 ETL](...)
+- [Resultado Exercicio 1 ETL](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%203/exercicios/etapa-1.txt)
 
-- [Resultado Exercicio 2 ETL]((...))
+- [Resultado Exercicio 2 ETL](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%203/exercicios/etapa-2.txt)
 
-- [Resultado Exercicio 3 ETL]((...))
+- [Resultado Exercicio 3 ETL](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%203/exercicios/etapa-3.txt)
 
-- [Resultado Exercicio 4 ETL]((...))
+- [Resultado Exercicio 4 ETL](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%203/exercicios/etapa-4.txt)
 
-- [Resultado Exercicio 5 ETL]((...))
+- [Resultado Exercicio 5 ETL](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%203/exercicios/etapa-5.txt)
 
-- [Codigos-Exercicios-Python]((...))
+- [Codigos-Exercicios-Python](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%203/exercicios/Exercicios%20de%20python.txt)
 
-- [Codigos-Exercicios-ETL]((...))
+- [Codigos-Exercicios-ETL](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%203/exercicios/Exercicios%20ETL.txt)
 
 
 ## Evidencias
