@@ -1,0 +1,102 @@
+------Seção 7: Exercicios Python II - 2/2------
+
+
+------Tarefa 1: Desafio - ETl com python:
+
+
+actors = []
+total_gross = []
+number_of_movies = []
+average_per_movie = []
+top_movie = []
+top_movie_gross = []
+
+def split_line(line):
+    fields = []
+    field = ''
+    in_quotes = False
+
+    for char in line:
+        if char == '"':
+            in_quotes = not in_quotes
+        elif char == ',' and not in_quotes:
+            fields.append(field.strip())
+            field = ''
+        else:
+            field += char
+
+    fields.append(field.strip())  
+    return fields
+
+with open('./actors.csv', 'r') as file:
+    lines = file.readlines()[1:]
+    for line in lines:
+        fields = split_line(line)
+        actors.append(fields[0])
+        total_gross.append(float(fields[1]))
+        number_of_movies.append(int(fields[2]))
+        average_per_movie.append(float(fields[3]))
+        top_movie.append(fields[4])
+        top_movie_gross.append(float(fields[5]))
+
+file.close()
+
+
+# Resposta exercicios de ETL
+
+# Exercicio 1
+max_num_movies = max(number_of_movies)
+max_num_movies_actor = actors[number_of_movies.index(max_num_movies)]
+
+with open("etapa-1.txt", "w") as file:
+    file.write("{}, {}".format( max_num_movies_actor, max_num_movies ))
+file.close
+
+
+
+
+
+# Exercicio 2
+average_gross = sum(top_movie_gross) / len(top_movie_gross)
+
+
+with open("etapa-2.txt", "w") as file:
+    file.write("{:.2f}".format( average_gross ))
+file.close 
+
+
+
+
+
+# Exercicio 3
+max_average_per_movie = max(average_per_movie)
+actor_max_average_per_movie = actors[average_per_movie.index(max_average_per_movie)]
+
+with open("etapa-3.txt", "w") as file:
+    file.write("{}".format( actor_max_average_per_movie ))
+file.close  
+
+
+
+
+
+# Exercicio 4
+top_movie_counts = {movie: top_movie.count(movie) for movie in set(top_movie)}
+top_movie_counts_sorted = sorted(top_movie_counts.items(), key=lambda x: (-x[1], x[0]))
+
+with open("etapa-4.txt", "w") as file:
+    for index, i in enumerate(top_movie_counts_sorted):
+        file.write("{} - O filme {} aparece {} vez(es) no dataset\n".format(index, i[0], i[1]))
+file.close() 
+
+
+
+
+
+# Exercicio 5
+actors_total_gross_sorted = sorted(zip(actors, total_gross), key=lambda x: -x[1])  
+
+with open("etapa-5.txt", "w") as file:
+    for i in actors_total_gross_sorted:
+        file.write("{} - {}\n".format( i[0], i[1] ))
+file.close()

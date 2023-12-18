@@ -36,7 +36,13 @@ Sprint 2 do PB da Compass com ênfase em AWS - Exercícios II
 
 ## Sprint 3 [README](linkdoreadmedasprint3)
 
-...
+Atividades da sprint:
+
+- [x] Data & Analytics PB-AWS 3/10
+    Sprint 3 semana 5 e 6
+- [x] Python 3 - curso completo do basico ao avançado
+- [x] Data & Analytics PB-AWS 3/10
+    Sprint 3 do PB da Compass com ênfase em AWS - Python Iniciante Parte I + Exercícios
 
 
 ## Sprint 4 [README](linkdoreadmedasprint4)
