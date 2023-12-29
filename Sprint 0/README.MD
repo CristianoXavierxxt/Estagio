@@ -2,7 +2,7 @@
 
 Aprendizagem da sprint:
 
-- Nesta sprint fiz um estudo aprofundado sobre Segurança em aplicações web e sobre métodos ágeis como scrum e kanban.
+- Nesta sprint fiz um estudo aprofundado sobre Segurança em aplicações web e sobre métodos ágeis.
 
 ## Certificados
 

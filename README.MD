@@ -12,7 +12,9 @@ Bem-vindo ao repositório do meu projeto! Aqui, você encontrará meu progresso 
 - **Experiências na Área de Tecnologia:** Trabalho com projetos pessoais onde tento encontrar um problema em alguma area e tento resolvelo, meu principais focos foram no desenvolvimento web 
 - **Hobbies:** Gosto de jogar com os amigos, assistir alguns filmes e estudar novos conteudos sobre as areas que desejo melhorar
 
-## Sprint 0 [README](linkparaoreadmedasprint0)
+## Sprint 0 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%200/README.MD)
+
+A sprint tem como objetivo introduzir a cultura ágil e a segurança em aplicações.
 
 
 ## Sprint 1 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%201/README.MD)
