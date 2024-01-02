@@ -50,7 +50,7 @@ Atividades da sprint:
     Sprint 3 do PB da Compass com ênfase em AWS - Python Iniciante Parte I + Exercícios
 
 
-## Sprint 4 [README](linkdoreadmedasprint4)
+## Sprint 4 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%204/README.MD)
 
 Atividades da sprint:
 
