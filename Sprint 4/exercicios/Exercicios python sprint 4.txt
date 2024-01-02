@@ -1,0 +1,102 @@
+Spint 4 exercicios
+
+
+--------------Seção 2:Exercícios--------------
+
+1 - Exercício de programação 1: E1
+
+numeros = []
+with open('./number.txt','r') as arquivo:
+    for linha in arquivo:
+        numeros.append(int(linha))
+
+
+numeros_pares = map(lambda x: x if x % 2 == 0 else 0, numeros)
+
+cinco_maiores_pares = sorted(numeros_pares, reverse=True)[:5]
+
+cinco_maiores_pares = list(filter(lambda x: x != 0, cinco_maiores_pares))
+
+soma_cinco_maiores_pares = sum(cinco_maiores_pares)
+
+print(cinco_maiores_pares)
+
+print(soma_cinco_maiores_pares) 
+
+
+
+
+
+2 - Exercício de programação 2: E2
+
+
+def conta_vogais(texto:str)-> int:
+    vogais = ['a', 'e', 'i', 'o', 'u']
+    
+    vogais_presentes = filter(lambda x: x.lower() in vogais, texto)
+    
+    quantidade_vogais = len(list(vogais_presentes))
+    
+    return quantidade_vogais
+
+
+
+
+3 - Exercício de programação 3: E3
+
+
+from functools import reduce
+
+def calcula_saldo(lancamentos) -> float:
+    converter_valor = lambda x: x[0] if x[1] == 'C' else -x[0]
+    
+    resultado = map(converter_valor, lancamentos)
+    
+    saldo_final = reduce(lambda x, y: x + y, resultado, 0)
+    
+    return saldo_final
+
+
+
+
+4 - Exercício de programação 4: E4
+
+
+def calcular_valor_maximo(operadores,operandos) -> float:
+    operacoes = {
+        '+': lambda a, b: a + b,
+        '-': lambda a, b: a - b,
+        '*': lambda a, b: a * b,
+        '/': lambda a, b: a / b,
+        '%': lambda a, b: a % b
+    }
+
+    resultados = map(lambda args: operacoes[args[0]](*args[1]), zip(operadores, operandos))
+
+    return max(resultados)
+
+
+
+5 - Exercício de programação 5: E5
+
+
+import csv
+
+def processar_notas(row):
+    nome = row[0]
+    notas = list(map(int, row[1:]))
+    maiores_notas = sorted(notas, reverse=True)[:3]
+    media_maiores_notas = round(sum(maiores_notas) / 3, 2)
+
+    print(f"Nome: {nome} Notas: {maiores_notas} Média: {media_maiores_notas}")
+
+def processar_arquivo_csv(nome_arquivo):
+    with open(nome_arquivo, newline='') as csvfile:
+
+        reader = csv.reader(csvfile)
+
+        for row in sorted(reader, key=lambda x: x[0]):
+
+            processar_notas(row)
+
+processar_arquivo_csv('estudantes.csv')

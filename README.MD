@@ -52,7 +52,14 @@ Atividades da sprint:
 
 ## Sprint 4 [README](linkdoreadmedasprint4)
 
-...
+Atividades da sprint:
+
+- [x] Data & Analytics - PB - AWS 4/10 Data & Analytics - PB - AWS 4/10
+- [x] Programação funcional: O que é? | Alura
+- [x] Python 3 - Curso Completo do Básico ao Avançado 
+- [x] Docker para Desenvolvedores (com Docker Swarm e Kubernetes) 
+- [x] Estatística Descritiva com Python 
+- [x] Data & Analytics - PB - AWS 4/10
 
 
 ## Sprint 5 [README](linkdoreadmedasprint5)
