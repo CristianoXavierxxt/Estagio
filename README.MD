@@ -62,7 +62,7 @@ Atividades da sprint:
 - [x] Data & Analytics - PB - AWS 4/10
 
 
-## Sprint 5 [README](linkdoreadmedasprint5)
+## Sprint 5 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%205/README.MD)
 
 Atividades da sprint:
 - [x] Data & Analytics - PB - AWS 5/10
