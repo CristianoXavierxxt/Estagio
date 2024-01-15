@@ -54,7 +54,7 @@ Atividades da sprint:
 
 Atividades da sprint:
 
-- [x] Data & Analytics - PB - AWS 4/10 Data & Analytics - PB - AWS 4/10
+- [x] Data & Analytics - PB - AWS 4/10
 - [x] Programação funcional: O que é? | Alura
 - [x] Python 3 - Curso Completo do Básico ao Avançado 
 - [x] Docker para Desenvolvedores (com Docker Swarm e Kubernetes) 
@@ -64,7 +64,14 @@ Atividades da sprint:
 
 ## Sprint 5 [README](linkdoreadmedasprint5)
 
-...
+Atividades da sprint:
+- [x] Data & Analytics - PB - AWS 5/10
+- [x] AWS Skill Builder - AWS Partner: Sales Accreditation (Business) (Portuguese)
+- [x] AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
+- [x] AWS Skill Builder - AWS Partner: Aspectos econômicos da Cloud
+- [x] AWS Skill Builder - AWS Partner: Accreditation (Technical) (Portuguese)
+- [x] AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner (Portuguese)
+- [x] Data & Analytics - PB - AWS 5/10 (Registro de certificados)
 
 
 ## Sprint 6 [README](linkdoreadmedasprint6)
