@@ -76,7 +76,23 @@ Atividades da sprint:
 
 ## Sprint 6 [README](linkdoreadmedasprint6)
 
-...
+Atividades da sprint:
+- [x] AWS Skill Builder - Data Analytics Fundamentals (Portuguese)
+- [x] AWS Skill Builder - AWS Partner: Data Analytics on AWS (Business)
+- [x] AWS Skill Builder - Introduction to Amazon Kinesis Streams
+- [x] AWS Skill Builder - Introduction to Amazon Kinesis Analytics
+- [x] AWS Skill Builder - Introduction to Amazon Elastic MapReduce (EMR) (Portuguese)
+- [x] AWS Skill Builder - Introduction to Amazon Athena (Portuguese)
+- [x] AWS Skill Builder - Introduction to Amazon Quicksight (Portuguese)
+- [x] AWS Skill Builder - Introduction to AWS IoT Analytics
+- [x] AWS Skill Builder - Getting Started with Amazon Redshift
+- [x] AWS Skill Builder - Deep Dive into Concepts and Tools for Analyzing Streaming Data (Portuguese)
+- [x] AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)
+- [x] AWS Skill Builder - Serverless Analytics (Portuguese)
+- [x] AWS Skill Builder - Why Analytics for Games (Portuguese)
+- [x] Data & Analytics - PB - AWS 6/10 Sprint 6 do PB da Compass com ênfase em AWS
+
+
 
 
 ## Sprint 7 [README](linkdoreadmedasprint7)
