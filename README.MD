@@ -74,7 +74,7 @@ Atividades da sprint:
 - [x] Data & Analytics - PB - AWS 5/10 (Registro de certificados)
 
 
-## Sprint 6 [README](linkdoreadmedasprint6)
+## Sprint 6 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%206/README.MD)
 
 Atividades da sprint:
 - [x] AWS Skill Builder - Data Analytics Fundamentals (Portuguese)
