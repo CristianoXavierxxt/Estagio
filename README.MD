@@ -97,7 +97,7 @@ Atividades da sprint:
 
 
 
-## Sprint 7 [README](linkdoreadmedasprint7)
+## Sprint 7 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%207/README.MD)
 
 Atividades da sprint:
 
