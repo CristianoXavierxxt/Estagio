@@ -65,6 +65,7 @@ Atividades da sprint:
 ## Sprint 5 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%205/README.MD)
 
 Atividades da sprint:
+
 - [x] Data & Analytics - PB - AWS 5/10
 - [x] AWS Skill Builder - AWS Partner: Sales Accreditation (Business) (Portuguese)
 - [x] AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
@@ -77,6 +78,7 @@ Atividades da sprint:
 ## Sprint 6 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%206/README.MD)
 
 Atividades da sprint:
+
 - [x] AWS Skill Builder - Data Analytics Fundamentals (Portuguese)
 - [x] AWS Skill Builder - AWS Partner: Data Analytics on AWS (Business)
 - [x] AWS Skill Builder - Introduction to Amazon Kinesis Streams
@@ -97,7 +99,12 @@ Atividades da sprint:
 
 ## Sprint 7 [README](linkdoreadmedasprint7)
 
-...
+Atividades da sprint:
+
+- [x] Data & Analytics - PB - AWS 7/10 Sprint 7 do PB da Compass com ênfase em AWS
+- [x] Learn By Example: Hadoop, MapReduce for Big Data problems
+- [x] Formação Spark com Pyspark : o Curso Completo
+- [ ] Data & Analytics - PB - AWS 7/10 (incompleto)
 
 
 ## Sprint 8 [README](linkdoreadmedasprint8)

@@ -1,0 +1,44 @@
+docker pull jupyter/all-spark-notebook
+
+
+docker run -it -p 8888:8888 jupyter/all-spark-notebook
+
+
+docker ps
+
+
+# Comando executado no segundo terminal:
+
+docker exec -it 70e646f4efdc pyspark
+
+
+
+
+
+------------------#comandos executados no shell spark:------------------
+
+import os
+
+
+url = "https://raw.githubusercontent.com/CristianoXavierxxt/Estagio/CristianoXavierxxt/SeLigaTech/README.MD?token=GHSAT0AAAAAACNVHWLKSSNPEFVZXN43SNWGZOJQ3WQ"
+
+
+os.system(f"wget {url} -O README.md")
+
+
+
+text_file = sc.textFile("README.md")
+
+
+
+word_counts = text_file.flatMap(lambda line: line.split(" ")) \
+
+                      .map(lambda word: (word, 1)) \
+
+                      .reduceByKey(lambda a, b: a + b)
+
+
+
+for (word, count) in word_counts.collect():
+
+   print(f"{word}: {count}")
