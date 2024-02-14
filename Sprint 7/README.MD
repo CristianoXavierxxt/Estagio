@@ -34,3 +34,11 @@ Evidencias da concusão dos cursos da sprint
 ![Evidencia curso de hadoop](evidencias/hadoop-evidencia.png)
 
 ![Evidencia curso de spark](evidencias/spark-curso-evidencia.png)
+
+<br/>
+
+Evidencias Desafio parte 1
+
+![Evidencia codigo python](evidencias/evidencia-desafio-etl.png)
+
+![Evidencia codigo docker](evidencias/evidencia-desafio-etl-2.png)
