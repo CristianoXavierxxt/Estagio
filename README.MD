@@ -104,7 +104,7 @@ Atividades da sprint:
 - [x] Data & Analytics - PB - AWS 7/10 Sprint 7 do PB da Compass com ênfase em AWS
 - [x] Learn By Example: Hadoop, MapReduce for Big Data problems
 - [x] Formação Spark com Pyspark : o Curso Completo
-- [ ] Data & Analytics - PB - AWS 7/10 (incompleto)
+- [x] Data & Analytics - PB - AWS 7/10 (incompleto)
 
 
 ## Sprint 8 [README](linkdoreadmedasprint8)

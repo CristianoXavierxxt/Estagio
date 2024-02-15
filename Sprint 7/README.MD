@@ -39,6 +39,6 @@ Evidencias da concusão dos cursos da sprint
 
 Evidencias Desafio parte 1
 
-![Evidencia codigo python](evidencias/evidencia-desafio-etl.png)
+![Evidencia codigo python](evidencias/evidencia-desafio-parte1-1.png)
 
-![Evidencia codigo docker](evidencias/evidencia-desafio-etl-2.png)
+![Evidencia codigo docker](evidencias/evidencia-desafio-parte1-2.png)
