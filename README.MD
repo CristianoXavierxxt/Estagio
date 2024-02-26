@@ -107,7 +107,7 @@ Atividades da sprint:
 - [x] Data & Analytics - PB - AWS 7/10 (incompleto)
 
 
-## Sprint 8 [README](linkdoreadmedasprint8)
+## Sprint 8 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%208/README.MD)
 
 - [x] Data & Analytics - PB - AWS 8/10 
 - [x] AWS - Tutoriais Técnicos - Analytics
