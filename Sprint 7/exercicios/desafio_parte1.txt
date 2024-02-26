@@ -1,0 +1,65 @@
+------------------Dockerfile------------------
+
+FROM python:3.12
+
+WORKDIR /app
+
+#esse arquivo requirements tem apenas a dependencia boto3
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "./script.py"]
+
+
+
+
+
+
+
+------------------Script python------------------
+
+import boto3
+import os
+from datetime import datetime
+import configparser
+
+
+
+def upload_to_s3(local_file_path, s3_bucket, s3_key):
+
+    config = configparser.ConfigParser()
+    config.read('config.ini')
+
+    aws_access_key_id = config.get('aws', 'aws_access_key_id')
+    aws_secret_access_key = config.get('aws', 'aws_secret_access_key')
+    aws_session_token = config.get('aws', 'aws_session_token')
+    
+    s3 = boto3.client('s3',
+                      aws_access_key_id=aws_access_key_id, 
+                      aws_secret_access_key=aws_secret_access_key, 
+                      aws_session_token=aws_session_token
+                    )
+    
+    print(local_file_path, s3_bucket, s3_key)
+    s3.upload_file(local_file_path, s3_bucket, s3_key)
+
+
+
+def ingest_csv_to_s3(local_folder, s3_bucket):
+    for root, dirs, files in os.walk(local_folder):
+        for file in files:
+            if file.endswith(".csv"):
+                local_file_path = os.path.join(root, file)
+                file_name, file_extension = os.path.splitext(file)
+                current_datetime = datetime.now()
+                s3_key = f"Raw/Local/CSV/{file_name}/{current_datetime.year}/{current_datetime.month:02d}/{current_datetime.day:02d}/{file_name}.csv"
+                upload_to_s3(local_file_path, s3_bucket, s3_key)
+
+
+local_folder = "./dados"
+s3_bucket = "desafioestagio"
+
+ingest_csv_to_s3(local_folder, s3_bucket)

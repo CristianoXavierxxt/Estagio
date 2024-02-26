@@ -1,0 +1,207 @@
+1. etapa-1:
+
+# Eu não baixei o spark localmente, em vez disso eu usei a imagem dada na sprint passada e copiei o arquivo nome_aleatorios.txt para dentro dela
+
+
+
+docker pull jupyter/all-spark-notebook
+
+
+
+docker run -it -p 8888:8888 jupyter/all-spark-notebook
+
+
+
+docker ps
+
+
+
+docker exec -it 51048f00956e /bin/bash (usei para descobrir para onde deveria copiar o arquivo nomes_aleatorios.txt)
+
+
+
+docker cp nomes_aleatorios.txt 51048f00956e:/home/jovyan/work/
+
+
+
+docker exec -it 51048f00956e pyspark
+
+
+
+# Comandos no shell
+
+
+
+>>> from pyspark.sql import SparkSession
+
+>>> from pyspark.sql.functions import lit, when, rand
+
+>>> from pyspark.sql.types import StringType
+
+>>> df_nomes = spark.read.csv("./work/nomes_aleatorios.txt", header=False, inferSchema=True, sep='\t')   
+
+>>> df_nomes.show(5)
+
+
+
+
+
+
+2. etapa-2:
+
+>>> df_nomes = df_nomes.withColumnRenamed("_c0", "nome")
+
+>>> df_nomes.show(10)
+
+
+3. etapa-3:
+
+>>> df_nomes = df_nomes.withColumn("Escolaridade",
+
+...                                when(rand() <= 0.33, "Fundamental")
+
+...                               .when((rand() > 0.33) & (rand() <= 0.67), "Médio")
+
+...                               .otherwise("Superior"))
+
+>>> df_nomes.show(10)
+
+
+
+
+
+4. etapa-4:
+
+>>> paises_americadosul = ["Brasil", "Argentina", "Colômbia", "Chile", "Peru", "Venezuela", "Equador",
+
+...                       "Bolívia", "Paraguai", "Uruguai", "Guiana", "Suriname", "Guiana Francesa"]
+
+>>> df_nomes = df_nomes.withColumn("Pais",
+
+...                               when(rand() <= 0.0769, "Brasil")  # 1/13 probabilidade
+
+...                               .when((rand() > 0.0769) & (rand() <= 0.1538), "Argentina")
+
+...                               .when((rand() > 0.1538) & (rand() <= 0.2308), "Colômbia")
+
+...                               .when((rand() > 0.2308) & (rand() <= 0.3077), "Chile") 
+
+...                               .when((rand() > 0.3077) & (rand() <= 0.3846), "Peru") 
+
+...                               .when((rand() > 0.3846) & (rand() <= 0.4615), "Venezuela")
+
+...                               .when((rand() > 0.4615) & (rand() <= 0.5385), "Equador")
+
+...                               .when((rand() > 0.5385) & (rand() <= 0.6154), "Bolívia") 
+
+...                               .when((rand() > 0.6154) & (rand() <= 0.6923), "Paraguai")
+
+...                               .when((rand() > 0.6923) & (rand() <= 0.7692), "Uruguai") 
+
+...                               .when((rand() > 0.7692) & (rand() <= 0.8462), "Guiana") 
+
+...                               .when((rand() > 0.8462) & (rand() <= 0.9231), "Suriname")
+
+...                               .otherwise("Guiana Francesa")) 
+
+>>> df_nomes.show(10)
+
+
+
+
+
+5. etapa-5:
+
+>>> df_nomes = df_nomes.withColumn("AnoNascimento",
+
+...                                (lit(1945) + (rand() * (2010 - 1945 + 1)).cast("int")))
+
+>>> df_nomes.show(10)
+
+
+
+
+
+
+6. etapa-6:
+
+>>> from pyspark.sql.functions import col
+
+>>> df_select = df_nomes.select("*").filter(col("AnoNascimento") >= 2000)
+
+>>> df_select.show(10)
+
+
+
+
+
+
+
+7. etapa-7:
+
+df_nomes.createOrReplaceTempView ("pessoas")
+
+spark.sql("select * from pessoas").show()
+
+
+
+>>> df_nomes.createOrReplaceTempView("pessoas")
+
+>>> query_sql = "SELECT * FROM pessoas WHERE AnoNascimento >= 2000"
+
+>>> df_select_sql = spark.sql(query_sql)
+
+>>> df_select_sql.show(10)
+
+
+
+
+
+
+8. etapa-8:
+
+>>> from pyspark.sql.functions import count
+
+>>> num_millennials = df_nomes.select("*").filter((col("AnoNascimento") >= 1980) & (col("AnoNascimento") <= 1994)).count()
+
+>>> print("Número de pessoas da geração Millennials:", num_millennials)
+
+Número de pessoas da geração Millennials: 2269996
+
+
+
+
+
+
+
+9. etapa-9:
+
+>>> df_nomes.createOrReplaceTempView("pessoas")
+
+>>> query_sql_millennials = "SELECT COUNT(*) AS num_millennials FROM pessoas WHERE AnoNascimento BETWEEN 1980 AND 1994"
+
+>>> result_sql_millennials = spark.sql(query_sql_millennials)
+
+>>> result_sql_millennials.show()
+
+
+
+
+
+
+
+10. etapa-10:
+
+>>> df_nomes.createOrReplaceTempView("pessoas")
+
+>>> query_sql_boomers = "SELECT Pais, 'Baby Boomers' AS Generacao, COUNT(*) AS Quantidade FROM pessoas WHERE AnoNascimento BETWEEN 1944 AND 1964 GROUP BY Pais"
+
+>>> query_sql_genx = "SELECT Pais, 'Geração X' AS Generacao, COUNT(*) AS Quantidade FROM pessoas WHERE AnoNascimento BETWEEN 1965 AND 1979 GROUP BY Pais"
+
+>>> query_sql_millennials = "SELECT Pais, 'Millennials' AS Generacao, COUNT(*) AS Quantidade FROM pessoas WHERE AnoNascimento BETWEEN 1980 AND 1994 GROUP BY Pais"
+
+>>> query_sql_genz = "SELECT Pais, 'Geração Z' AS Generacao, COUNT(*) AS Quantidade FROM pessoas WHERE AnoNascimento BETWEEN 1995 AND 2015 GROUP BY Pais"
+
+>>> df_result = spark.sql(query_sql_boomers).union(spark.sql(query_sql_genx)).union(spark.sql(query_sql_millennials)).union(spark.sql(query_sql_genz))
+
+>>> df_result.orderBy("Pais", "Generacao", "Quantidade").show()

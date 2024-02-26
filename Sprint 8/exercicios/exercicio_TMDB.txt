@@ -1,0 +1,38 @@
+import requests
+import pandas as pd
+from IPython.display import display
+ 
+api_key = "" #removi a chave do codigo
+release_year = '2017'
+ids_generos = '18,10749'
+numero_pagina = 10
+ 
+ 
+url_discover_base = f"https://api.themoviedb.org/3/discover/movie?api_key={api_key}&primary_release_year={release_year}&with_genres={ids_generos}&page="
+ 
+filmes = []
+ 
+for page in range(1, numero_pagina + 1):
+    url_discover = url_discover_base + str(page)
+    response = requests.get(url_discover)
+    data = response.json()
+ 
+    for movie in data['results']:
+        df = {
+            'ID': movie['id'],
+            'Titulo': movie['title'],
+            'Data de lançamento': movie['release_date'],
+            'Votos': movie['vote_count'],
+            'Média de votos': movie['vote_average']
+        }
+ 
+        filmes.append(df)
+ 
+        
+df = pd.DataFrame(filmes)
+ 
+caminho_txt = './teste.txt'
+df.to_csv(caminho_txt, sep='\t', index=False)
+ 
+ 
+display(df) 

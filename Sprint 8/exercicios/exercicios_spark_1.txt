@@ -1,0 +1,80 @@
+1. Em Python, declare e inicialize uma lista contendo 250 inteiros obtidos de forma aleatória. Após, aplicar o método reverse sobre o conteúdo da lista e imprimir o resultado:
+
+
+
+import random
+
+lista_inteiros = [random.randint(1, 1000) for _ in range(250)]
+
+lista_inteiros.reverse()
+
+print(lista_inteiros)
+
+
+
+
+
+
+
+
+2. Em Python, declare e inicialize uma lista contendo o nome de 20 animais. Ordene-os em ordem crescente e itere sobre os itens, imprimindo um a um (você pode utilizar list comprehension aqui).  Na sequência, armazene o conteúdo da lista em um arquivo de texto, um item em cada linha, no formato CSV.
+
+
+
+animais = ['Elefante', 'Leão', 'Girafa', 'Tigre', 'Zebra', 'Cavalo', 'Cachorro', 'Gato', 'Urso', 'Panda', 'Macaco', 'Pinguim', 'Baleia', 'Golfinho', 'Tubarão', 'Coruja', 'Águia', 'Cobra', 'Rinoceronte', 'Hipopótamo']
+
+animais.sort()
+
+with open('./animais.txt','w',encoding='utf-8') as file:
+    for animal in animais:
+        file.write(animal + '\n')
+
+
+
+
+
+
+
+3. Elaborar um código Python para gerar um dataset de nomes de pessoas. Siga os passos a seguir para realizar a atividade:
+
+
+
+import random
+import os
+import time
+import names
+
+random.seed(40)
+
+qtd_nomes_unicos = 3000
+
+qtd_nomes_aleatorios = 10000000
+
+aux=[]
+
+for i in range(0, qtd_nomes_unicos):
+
+    aux.append(names.get_full_name())
+
+
+
+print("Gerando {} nomes aleatórios".format(qtd_nomes_aleatorios))
+
+dados=[]
+
+
+
+for i in range(0,qtd_nomes_aleatorios):
+
+    dados.append(random.choice(aux))
+
+
+with open('./nomes_aleatorios.txt','w',encoding='utf-8') as file:
+    for nome in dados:
+        file.write(nome + '\n')
+
+
+with open('./nomes_aleatorios.txt','r') as file:
+    conteudo = file.read()
+
+print(conteudo)

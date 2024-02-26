@@ -12,6 +12,8 @@ Aprendizagem da sprint:
 
 - [Exercicios Spark](exercicios/exercios_spark.txt)
 
+- [Desafio parte1](exercicios/desafio_parte1.txt)
+
 
 ## Evidencias
 
