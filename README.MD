@@ -115,7 +115,7 @@ Atividades da sprint:
 
 ## Sprint 9 [README](linkdoreadmedasprint9)
 
-...
+- [x] Data & Analytics - PB - AWS 9/10
 
 
 ## Sprint 10 [README](linkdoreadmedasprint10)
