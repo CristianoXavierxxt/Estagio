@@ -113,7 +113,7 @@ Atividades da sprint:
 - [x] AWS - Tutoriais Técnicos - Analytics
 
 
-## Sprint 9 [README](linkdoreadmedasprint9)
+## Sprint 9 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%209/README.MD)
 
 - [x] Data & Analytics - PB - AWS 9/10
 

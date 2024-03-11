@@ -8,8 +8,10 @@ Aprendizagem da sprint:
 ## Exercicios
 
 - [Exercicio Mondelagem de dados 1](exercicios/exercicio_1/Script.sql)
+  [README](exercicios/exercicio_1/README.md)
 
 - [Exercicios Mondelagem de dados 2](exercicios/exercicio_2/Script-2.sql)
+  [README](exercicios/exercicio_2/README.MD)
 
 
 ## Evidencias
