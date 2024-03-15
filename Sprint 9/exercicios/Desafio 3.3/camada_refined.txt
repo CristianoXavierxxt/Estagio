@@ -1,0 +1,28 @@
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col
+from pyspark.sql.functions import lit
+
+parquet_data = spark.read.parquet("s3://desafioestagio/Trusted/dados_parquet/2024-03-15/")
+
+selected= parquet_data.select("id","budget", "popularity", "release_date", "revenue", "vote_average", "vote_count")
+
+df = selected
+
+new_df = df.withColumn('idLA', 
+                            when(df['release_date'].startswith('2014'), '102651')
+                            .when(df['release_date'].startswith('2015'), '150689')
+                            .when(df['release_date'].startswith('2016'), '278927')
+                            .when(df['release_date'].startswith('2017'), '321612')
+                            .when(df['release_date'].startswith('2019'), '420817')
+                            .when(df['release_date'].startswith('2020'), '337401')
+                            .otherwise('Outro'))
+
+
+
+duplicated_df = new_df.filter(col('release_date').substr(1, 4) == '2019')
+
+duplicated_df = duplicated_df.withColumn('idLA', lit(420818))
+
+final_df = new_df.union(duplicated_df)
+
+final_df.write.partitionBy("dt").format("parquet").save("s3a://desafioestagio/Refined/dados_parquet/")

@@ -1,0 +1,21 @@
+Fiz este codigo localmente usando um container docker com uma imagem que pode ser encontrada no seguinte link:
+https://docs.aws.amazon.com/pt_br/glue/latest/dg/aws-glue-programming-etl-libraries.html
+
+		---------------------------------- PySpark ----------------------------------
+
+
+from pyspark.sql import SparkSession
+
+json_data = spark.read.json("s3://desafioestagio/Raw/tmdb/json/2024/03/11/")
+
+json_data.printSchema()
+
+json_data.show()
+
+json_data_filtrado = json_data.filter(
+    (col("budget") != 0) | (col("revenue") != 0) | (col("popularity").isNotNull()) | (col("release_date").isNotNull())
+)
+
+json_data_filtrado = json_data_filtrado.withColumn("dt", lit("2024-03-11"))
+
+json_data_filtrado.write.partitionBy("dt").format("parquet").save("s3a://desafioestagio/Trusted/dados_parquet/2024-03-11/")
