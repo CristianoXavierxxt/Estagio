@@ -120,7 +120,9 @@ Atividades da sprint:
 
 ## Sprint 10 [README](linkdoreadmedasprint10)
 
-...
+- [x] Complete Introduction to AWS QuickSight
+- [x] Workshop de QuickSight para Autores
+- [x] Data & Analytics - PB - AWS 10/10
 
 
 ## Contato
