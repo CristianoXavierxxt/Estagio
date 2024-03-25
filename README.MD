@@ -118,7 +118,7 @@ Atividades da sprint:
 - [x] Data & Analytics - PB - AWS 9/10
 
 
-## Sprint 10 [README](linkdoreadmedasprint10)
+## Sprint 10 [README](https://github.com/CristianoXavierxxt/Estagio/blob/CristianoXavierxxt/SeLigaTech/Sprint%2010/README.MD)
 
 - [x] Complete Introduction to AWS QuickSight
 - [x] Workshop de QuickSight para Autores

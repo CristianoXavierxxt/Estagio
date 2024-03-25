@@ -1,4 +1,4 @@
-## Sprint 9
+## Sprint 10
 
 Aprendizagem da sprint:
 - Chegamos na sprint final do programa de bolsas.
